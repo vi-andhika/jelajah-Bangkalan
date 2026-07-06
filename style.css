@@ -17,6 +17,46 @@
   --radius:    10px;
 }
 
+[data-theme="dark"] {
+  --navy:       #eef2f8;
+  --navy-mid:   #cddafa;
+  --navy-light: #9fb3d9;
+  --gold:       #f0c040;
+  --gold-soft:  #3a3010;
+  --gold-mid:   #f0c040;
+  --blue:       #6fb3e8;
+  --blue-light: #1e3350;
+  --blue-pale:  #0f1a2e;
+  --text-body:  #b9c6de;
+  --white:      #16233b;
+  --border:     #2a3d5c;
+  --shadow:     0 4px 20px rgba(0, 0, 0, 0.35);
+}
+
+.theme-toggle {
+  background: none;
+  border: 1px solid rgba(255,255,255,0.15);
+  color: var(--gold);
+  font-size: 1.1rem;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.theme-toggle:hover {
+  background-color: rgba(255,255,255,0.1);
+  transform: rotate(15deg);
+}
+
+body {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
 *, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
